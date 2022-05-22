@@ -1,0 +1,85 @@
+main{
+    margin-top: 2vh;
+    margin-left: 43vw;
+    width: 15vw;
+    height: 20vh;
+    user-select: none;
+    background-color: red;
+    display: flex;
+    cursor: pointer;
+    font-size: 5vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 5px 0.5em gray;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.container{
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+img{
+    width: 60%;
+    height: 75%;
+}
+
+.ednaldo{
+    margin-top: 2%;
+    margin-left: 45%;
+    width: 20%;
+    height: 20%;
+}
+
+.baloon{
+    margin-top: -5.5vh;
+    margin-left: 48vw   ;
+    width: 10vh;
+    height: 10vh;
+    background-color: red;
+    transform: rotate(45deg) scale(.5);
+    border-radius: 10px;
+}
+
+.heart:first-child{
+    width: 10vh;
+    height: 10vh;
+    flex: none;
+    position: relative;
+    border: 0 none;
+    background-color: white;
+    transform: rotate(45deg) scale(.5);
+    transition: .3s;
+    /* transition: 300ms; */
+}
+
+.heart:hover{
+    background-color: #d1d8e0;
+}
+
+.heart:active{
+    transform: rotate(45deg) scale(0.6);
+}
+  
+.heart:first-child:before,
+.heart:first-child:after{
+    content: " ";
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+}
+  
+.heart:before{
+    top: -50%;
+    left: 0%;
+}
+  
+.heart:after{
+    top: 0%;
+    left: -50%;
+}    
+
